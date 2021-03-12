@@ -1,0 +1,79 @@
+.navbar a{
+    font-size: 22px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card p {
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+
+.row .card {
+    transition: box-shadow .3s, transform 0.3s;
+}
+
+.row .card:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* .carousel img{
+    object-fit: cover;
+} */
+.margin-left {
+    margin-left: -50px;
+}
+
+.foto h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.foto img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.jaminan {
+    margin-top: 200px;
+}
+
+.fotoproduk {
+    width: 250px;
+    height: 250px;
+}
+
+.jumbotron {
+    text-align: center;
+    height: 800px;
+    color: white;
+    background-image: url(../img/bgjumbotron2.jpg);
+    background-size: cover;
+}
+.jumbotron .display-4
+{
+    margin-top: 200px;
+}
+.jumbotron .btn{
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: .5rem;
+}
+.jumbotron hr{
+    width: 100%;
+    border-color:white;
+    border-width: 2px;
+}
+#tempatbelanja{
+    margin-top: 40px;
+    font-size: 25px;
+}
+#belipulsa{
+    margin-left: -15px;
+}
