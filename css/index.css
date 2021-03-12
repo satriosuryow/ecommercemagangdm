@@ -26,9 +26,9 @@ h3 {
 /* .carousel img{
     object-fit: cover;
 } */
-/* .margin-left {
-    margin-left: -10px;
-} */
+.margin-left {
+    margin-left: -20px;
+}
 
 .foto h4 {
     text-align: center;
