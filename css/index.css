@@ -1,5 +1,5 @@
 .navbar a{
-    font-size: 22px;
+    font-size: 18px;
 }
 * {
     font-family: 'Poppins', sans-serif;
@@ -26,9 +26,9 @@ h3 {
 /* .carousel img{
     object-fit: cover;
 } */
-.margin-left {
-    margin-left: -50px;
-}
+/* .margin-left {
+    margin-left: -10px;
+} */
 
 .foto h4 {
     text-align: center;
@@ -51,14 +51,14 @@ h3 {
 
 .jumbotron {
     text-align: center;
-    height: 800px;
+    height: 770px;
     color: white;
     background-image: url(../img/bgjumbotron2.jpg);
     background-size: cover;
 }
 .jumbotron .display-4
 {
-    margin-top: 200px;
+    margin-top: 160px;
 }
 .jumbotron .btn{
     padding: 10px;
