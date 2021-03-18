@@ -28,7 +28,7 @@
                         <a class="nav-link text-white" href="#">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">DOWNLOAD</a>
+                        <a class="nav-link text-white" href="produk/index.php">PRODUK</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">TUTORIAL</a>
@@ -47,329 +47,192 @@
     <!-- JUMBOTRON -->
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">EXPLORE YOURSELF WITH <br> <span class="font-weight-bold"> DIGITAL MEDIA TEKNOLOGI</span></h1>
+            <h1 class="display-4">EXPLORE YOURSELF WITH <span class="font-weight-bold"> DIGITAL MEDIA TEKNOLOGI</span></h1>
             <hr>
             <p class="lead" id="tempatbelanja">Tempat Belanja Barang Elektronik Original dan Terpercaya.</p>
-            <p class="lead">
-                <a class="btn btn-light btn-lg" href="#" role="button">Kunjungi</a>
-            </p>
         </div>
     </div>
-    <!-- KATEGORI TOP UP  -->
-    <div class="col-8 offset-2 mt-5">
-        <div class="card p-3">
-            <div class="row">
-                <!-- KATEGORI PILIHAN -->
-                <div class="col-6">
-                    <h4 class="font-weight-bold p-3">Kategori Pilihan</h3>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="card p-1">
-                                    <img src="img/produk1.png" height="150" alt="">
-                                    <div class="card-title text-center">ASUS ROG </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card p-1">
-                                    <img src="img/produk4.png" height="150" alt="">
-                                    <div class="card-title text-center">Lenovo</div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card p-1">
-                                    <img src="img/produk5.png" height="150" alt="">
-                                    <div class="card-title text-center">msi</div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                <!-- TOP UP TAGIHAN -->
-                <div class="col-6">
-                    <h3 class="font-weight-bold p-3">Top Up & Tagihan</h3>
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item active">
-                            <a data-toggle="tab" class="nav-link text-dark" href="#pulsa">Pulsa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" class="nav-link text-dark" href="#paketdata">Paket Data</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" class="nav-link text-dark" href="#listrikpln">Listrik PLN</a>
-                        </li>
-                    </ul>
-                    <!-- NAV TAB CONTENT -->
-                    <div class="tab-content border-bottom border-left border-right pb-5">
-                        <div id="pulsa" class="tab-pane">
-                            <div class="row">
-                                <div class="col-5 pl-5">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">No Telepon</label>
-                                        <input type="text" class="form-control" id="notelp" aria-describedby="notelp">
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">Nominal</label>
-                                        <input type="text" class="form-control" id="notelp" aria-describedby="notelp" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-light mt-5 pl-3 pr-3" id="belipulsa">Beli</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="paketdata" class="tab-pane">
-                            <div class="row">
-                                <div class="col-5 pl-5">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">No Telepon</label>
-                                        <input type="text" class="form-control" id="notelp" aria-describedby="notelp">
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">Nominal</label>
-                                        <input type="text" class="form-control" id="notelp" aria-describedby="notelp" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-light mt-5 pl-3 pr-3" id="belipulsa">Beli</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="listrikpln" class="tab-pane">
-                            <div class="row">
-                                <div class="col-5 pl-5">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">Jenis Produk Listrik</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>Token Listrik</option>
-                                            <option>Tagihan Listrik</option>
-                                            <option>PLN Non-Taglis</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">No. Meter/ID Pel</label><br>
-                                        <input type="text" class="form-control mt-4" id="notelp" aria-describedby="notelp" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <label for="" class="mt-3 font-weight-bold">Nominal</label>
-                                        <input type="text" class="form-control mt-4" id="notelp" aria-describedby="notelp" disabled>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END TOP UP TAGIHAN -->
-
-            </div>
-            <!-- BOTTOM CARD -->
-            <div class="row mt-4">
-                <div class="col-2">
-                    <div class="card" style="width: 8rem;">
-                        <div class="text-center">Kategori</div>
-                    </div>
-                </div>
-                <div class="col-2 margin-left">
-                    <div class="card" style="width: 8rem;">
-                        <div class="text-center">Semua Promo</div>
-                    </div>
-                </div>
-                <div class="col-2 margin-left">
-                    <div class="card" style="width: 8rem;">
-                        <div class="text-center">Pulsa</div>
-                    </div>
-                </div>
-                <div class="col-2 margin-left">
-                    <div class="card" style="width: 8rem;">
-                        <div class="text-center">Laptop</div>
-                    </div>
-                </div>
-                <div class="col-2 margin-left">
-                    <div class="card" style="width: 8rem;">
-                        <div class="text-center">Website</div>
-                    </div>
-                </div>
-                <div class="col-2 margin-left">
-                    <div class="card" style="width: 8rem;">
-                        <div class="text-center">Aplikasi</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END KATEGORI TOP UP -->
     <!-- PRODUK TERSEDIA -->
-    <div class="col-8 offset-2">
-        <h3 class=" font-weight-bold m-4">Produk Tersedia</h3>
-    </div>
+    <h3 class=" font-weight-bold m-4 text-center">Produk Tersedia</h3>
     <div class="container">
-        <div class="row mx-auto mb-2">
+        <div class="row mb-2 mt-5">
             <!-- CARD 1 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <div class="fotoproduk">
-                    <img id="foto" id="foto" class="card-img-top" src="img/produk1.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Laptop Asus ROG Zephyrus</h5>
-                    <p class="card-text">G14 GA401iH Ryzen 7 4800 8GB 512ssd GTX1650</p>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk1">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 15.499.999</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <div class="fotoproduk">
+                        <img class="card-img-top" src="img/produk1.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Laptop Asus ROG Zephyrus</h5>
+                        <p class="card-text">G14 GA401iH Ryzen 7 4800 8GB 512ssd GTX1650</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk1">
+                                Detail
+                            </button>
+                            <a href="checkout/produk1.php" class="btn btn-danger">Rp 15.499.999</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- CARD 2 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <div class="fotoproduk">
-                    <img id="foto" class="card-img-top" src="img/produk22.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Laptop Asus ROG Zephyrus</h5>
-                    <p class="card-text">G15 GA503</p><br>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk2">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 21.999.999</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <div class="fotoproduk">
+                        <img class="card-img-top" src="img/produk22.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Laptop Asus ROG Zephyrus</h5>
+                        <p class="card-text">G15 GA503</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk2">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 21.999.999</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- CARD 3 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <div class="fotoproduk">
-                    <img id="foto" class="card-img-top" src="img/produk3.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Laptop Asus ROG Strix</h5>
-                    <p class="card-text">G15 G513</p><br>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk3">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 20.449.000</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <div class="fotoproduk">
+                        <img class="card-img-top" src="img/produk3.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Laptop Asus ROG Strix</h5>
+                        <p class="card-text">G15 G513</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk3">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 20.449.000</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- CARD 4 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <div class="fotoproduk">
-                    <img id="foto" class="card-img-top" src="img/produk4.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Lenovo Legion 5 15ARH05 Ryzen 5</h5>
-                    <p class="card-text">4600H 16 GB 512 SSD</p><br>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk4">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 16.200.000</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <div class="fotoproduk">
+                        <img class="card-img-top" src="img/produk4.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Lenovo Legion 5 15ARH05 Ryzen 5</h5>
+                        <p class="card-text">4600H 16 GB 512 SSD</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk4">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 16.200.000</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mx-auto">
+        <div class="row">
             <!-- CARD 5 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <div class="fotoproduk">
-                    <img id="foto" class="card-img-top" src="img/msi.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Laptop MSI</h5><br>
-                    <p class="card-text">GF 63 Thin</p>
-                    <br>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk5">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 11.730.000</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <div class="fotoproduk">
+                        <img class="card-img-top" src="img/msi.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Laptop MSI</h5>
+                        <p class="card-text">GF 63 Thin</p>
+
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk5">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 11.730.000</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- CARD 6 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <img class="card-img-top" src="img/sades.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Headset Gaming SADES</h5>
-                    <p class="card-text">AW79 7.1 </p><br>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk6">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 250.000</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="img/sades.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Headset Gaming SADES</h5>
+                        <p class="card-text">AW79 7.1 </p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk6">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 250.000</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- CARD 7 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <img class="card-img-top" src="img/sabbat.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Sabbat X12 Pro TWS </h5>
-                    <p class="card-text">IEM Sport Bluetooth Earphone Stereo - Flame</p><br>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk7">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 599.000</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="img/sabbat.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Sabbat X12 Pro TWS </h5>
+                        <p class="card-text">IEM Sport Bluetooth Earphone Stereo - Flame</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk7">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 599.000</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- CARD 8 -->
-            <div class="card mb-3 mr-2 ml-2" style="width: 16rem;">
-                <img class="card-img-top" src="img/mitv.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">New Xiaomi Mi TV 4 32inch</h5>
-                    <p class="card-text">Android LED Smart TV 32" (penerus seri 4A) - MiTV4</p>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <div class="tombol mt-3">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk8">
-                            Detail
-                        </button>
-                        <a href="#" class="btn btn-danger">Rp 2.598.000</a>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="img/mitv.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">New Xiaomi Mi TV 4 32inch</h5>
+                        <p class="card-text">Android LED Smart TV 32" (penerus seri 4A) - MiTV4</p>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <div class="tombol mt-3">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk8">
+                                Detail
+                            </button>
+                            <a href="#" class="btn btn-danger">Rp 2.598.000</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -377,10 +240,10 @@
     </div>
     <!-- END PRODUK TERSEDIA -->
     <!-- PRODUK KEKINIAN -->
-    <div class="col-8 offset-2 mt-4">
-        <h3 class="font-weight-bold p-3">Produk Terlaris!</h3>
-        <div class="row mt-3">
-            <div class="col-4">
+    <div class="container mt-5">
+        <h3 class="font-weight-bold">Produk Terlaris!</h3>
+        <div class="row mt-3 no-gutters">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-6">
@@ -394,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-6">
@@ -408,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-6">
@@ -423,8 +286,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3 mb-5">
-            <div class="col-3">
+        <div class="row mt-3 mb-5 no-gutters">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-5">
@@ -438,7 +301,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-5">
@@ -452,7 +315,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-5">
@@ -466,7 +329,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
                         <div class="col-4">
@@ -484,123 +347,82 @@
     </div>
     <!-- END PRODUK KEKINIAN -->
     <!-- CARI KATEGORI APA -->
-    <div class="col-8 offset-2 mt-4">
-        <h3 class="font-weight-bold p-3">Cari Kategori Apa ?</h3>
-        <div class="row mt-3 mb-2">
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/elektronik.png" alt="">
-                    <br>
-                    <h4>Elektronik</h4>
-                </div>
+    <div class="container">
+        <h3 class="font-weight-bold">Cari Kategori Apa ?</h3>
+        <div class="row mt-3 mb-2 no-gutters">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/elektronik.png" alt="">
+                <p class="text-center">Elektronik</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/dapur.png" alt="">
-                    <br>
-                    <h4>Dapur</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/dapur.png" alt="">
+                <p class="text-center">Dapur</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/mainan.png" alt="">
-                    <br>
-                    <h4>Mainan & Hobi</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/mainan.png" alt="">
+                <p class="text-center">Mainan & Hobi</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/fashion.jpg" alt="">
-                    <br>
-                    <h4>Fashion</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/fashion.jpg" alt="">
+                <p class="text-center">Fashion</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/buku.jpg" alt="">
-                    <br>
-                    <h4>Buku</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/buku.jpg" alt="">
+                <p class="text-center">Buku</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/olahraga.jpg" alt="">
-                    <br>
-                    <h4>Olahraga</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/olahraga.jpg" alt="">
+                <p class="text-center">Olahraga</p>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/handphone.jpg" alt="">
-                    <br>
-                    <h4>Handphone</h4>
-                </div>
+        <div class="row mt-3 no-gutters">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/handphone.jpg" alt="">
+                <p class="text-center">Handphone</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/laptop.jpg" alt="">
-                    <br>
-                    <h4>Laptop</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/laptop.jpg" alt="">
+                <p class="text-center">Laptop</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/gaming.jpg" alt="">
-                    <br>
-                    <h4>Gaming</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/gaming.jpg" alt="">
+                <p class="text-center">Gaming</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/hewan.jpg" alt="">
-                    <br>
-                    <h4>Perawatan Hewan</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/hewan.jpg" alt="">
+                <p class="text-center">Perawatan Hewan</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/perawatan.jpg" alt="">
-                    <br>
-                    <h4>Perawatan Tubuh</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/perawatan.jpg" alt="">
+                <p class="text-center">Perawatan Tubuh</p>
             </div>
-            <div class="col-2">
-                <div class="foto">
-                    <img class="thumbnail" src="img/musik.jpg" alt="">
-                    <br>
-                    <h4>Film & Musik</h4>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+                <img class="foto " src="img/musik.jpg" alt="">
+                <p class="text-center">Film & Musik</p>
             </div>
         </div>
     </div>
     <!-- END KATEGORI APA -->
     <!-- OFFICIAL STORE -->
-    <div class="col-8 offset-2 mt-4">
+    <div class="container mt-5">
         <div class="row">
             <h3 class="font-weight-bold">Official Store </h3><i class="fas fa-check fa-2x ml-1 text-primary"></i>
         </div>
-        <div class="row mt-3">
-            <div class="col-4">
-                <div class="foto">
-                    <img src="img/logitech.jpg" alt="">
-                </div>
+        <div class="row mt-3 no-gutters">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
+                <img class="foto p-1" src="img/logitech.jpg" alt="">
             </div>
-            <div class="col-4">
-                <div class="foto">
-                    <img src="img/dekoruma.jpg" alt="">
-                </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
+                <img class="foto p-1" src="img/dekoruma.jpg" alt="">
             </div>
-            <div class="col-4">
-                <div class="foto">
-                    <img src="img/ovomaltine.jpg" alt="">
-                </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
+                <img class="foto p-1" src="img/ovomaltine.jpg" alt="">
             </div>
         </div>
     </div>
+    </div>
     <!-- PAGINATION -->
-    <div class="col-5 offset-5 mt-5">
+    <!-- <div class="col-5 offset-5 mt-5">
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -610,90 +432,94 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
     <!-- FOOTER -->
-    <div class="jaminan bg-light p-5 border-bottom border-secondary">
-        <div class="row mx-auto">
-            <div class="col-4 mt-2">
+
+    <footer class="text-dark mt-5">
+        <div class="bg-light p-5 border-bottom border-secondary">
+            <div class="container">
                 <div class="row">
-                    <div class="col-2"><i class="fas fa-backward fa-2x"></i></div>
-                    <div class="col">
-                        <h4>Transparan</h4>
-                        <h5>Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima</h5>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-2"><i class="fas fa-backward fa-2x"></i></div>
+                            <div class="col">
+                                <h5>Transparan</h5>
+                                <p>Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-4 mt-2">
-                <div class="row">
-                    <div class="col-2"><i class="fas fa-shield-alt fa-2x"></i></div>
-                    <div class="col">
-                        <h4>100% Aman</h4>
-                        <h5>Bandingkan review untuk berbagai online shop terpercaya se-Indonesia</h5>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-2"><i class="fas fa-shield-alt fa-2x"></i></div>
+                            <div class="col">
+                                <h5>100% Aman</h5>
+                                <p>Bandingkan review untuk berbagai online shop terpercaya se-Indonesia</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-4 mt-2">
-                <div class="row">
-                    <div class="col-2"><i class="fas fa-truck fa-2x"></i></div>
-                    <div class="col">
-                        <h4>Gratis Ongkir</h4>
-                        <h5>Barang sampai di tempat Anda tanpa biaya</h5>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-2"><i class="fas fa-truck fa-2x"></i></div>
+                            <div class="col">
+                                <h5>Gratis Ongkir</h5>
+                                <p>Barang sampai di tempat Anda tanpa biaya</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="text-dark p-5">
-        <div class="col-8 offset-2">
-            <div class="row">
-                <div class="col-md-5 mt-3">
-                    <h4 class="font-weight-bold">DM TEKNO</h4>
-                    <p>Tentang DM Tekno</p>
-                    <p>Karir</p>
-                    <p>Blog</p>
-                    <h4 class="font-weight-bold mt-4">JUAL</h4>
-                    <p>Pusat Edukasi Seller</p>
-                    <p>Mitra Toppers</p>
-                    <p>Daftar Official Store</p>
-                </div>
-                <div class="col-md-5 mt-3">
-                    <h4 class="font-weight-bold">BELI</h4>
-                    <p>Tagihan dan Top Up</p>
-                    <p>Tukar Tambah</p>
-                    <p>DM Tekno COD</p>
-                    <h4 class="font-weight-bold mt-4">BANTUAN & PANDUAN</h4>
-                    <p>DM Tekno Care</p>
-                    <p>Syarat dan Ketentuan</p>
-                    <p>Kebijakan Privasi</p>
-                    <h4 class="font-weight-bold">PENGIRIMAN</h4>
-                    <img src="img/jne.png" width="50" class="mr-1" alt="">
-                    <img src="img/jnt.png" width="50" class="mr-1" alt="">
-                    <img src="img/gosend.png" width="50" class="mr-1" alt="">
-                </div>
-                <div class="col-md-2 mt-3">
-                    <h4 class="font-weight-bold">IKUTI KAMI</h4>
-                    <i class="fab fa-facebook-square ml-2 mr-2 fa-lg mt-2 " title="facebook"></i></i><a href="" class="text-dark">Facebook</a><br>
-                    <i class="fab fa-instagram ml-2 mr-2 fa-lg mt-2" title="instagram"></i><a href="" class="text-dark">Instagram</a><br>
-                    <i class="fab fa-twitter-square ml-2 mr-2 fa-lg mt-2" title="twitter"></i><a href="" class="text-dark">Twitter</a><br>
-                    <i class="fab fa-pinterest-square ml-2 mr-2 fa-lg mt-2" title="pinterest"></i><a href="" class="text-dark">Pinterest</a><br><br>
-                    <h4 class="font-weight-bold">PEMBAYARAN</h4>
-                    <img src="img//bca.png" width="50" class="mr-1" alt="">
-                    <img src="img/bni.png" width="50" class="mr-1" alt="">
-                    <img src="img/bri.png" width="50" class="mr-1" alt="">
-                    <br>
-                    <img src="img/mandiri.png" width="50" class="mr-1" alt="">
-                    <img src="img/cimb.png" width="50" class="mr-1" alt="">
-                    <img src="img/alfamart.png" width="50" class="mr-1" alt="">
-                    <br>
-                    <img src="img/indomaret.png" width="50" class="mr-1" alt="">
+            <div class="container">
+                <div class="row mt-5">
+
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <h5 class="font-weight-bold">DM TEKNO</h5>
+                        <p>Tentang DM Tekno</p>
+                        <p>Karir</p>
+                        <p>Blog</p>
+                    </div>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <h5 class="font-weight-bold">BELI</h5>
+                        <p>Tagihan dan Top Up</p>
+                        <p>Tukar Tambah</p>
+                        <p>DM Tekno COD</p>
+                    </div>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <h5 class="font-weight-bold">JUAL</h5>
+                        <p>Pusat Edukasi Seller</p>
+                        <p>Mitra Toppers</p>
+                        <p>Daftar Official Store</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="container">
+                <div class="row mt-2">
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <h5 class="font-weight-bold">BANTUAN & PANDUAN</h5>
+                        <p>DM Tekno Care</p>
+                        <p>Syarat dan Ketentuan</p>
+                        <p>Kebijakan Privasi</p>
+                    </div>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <h4 class="font-weight-bold">PENGIRIMAN</h4>
+                        <img src="img/jne.png" width="50" class="mr-1" alt="">
+                        <img src="img/jnt.png" width="50" class="mr-1" alt="">
+                        <img src="img/gosend.png" width="50" class="mr-1" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                        <h5 class="font-weight-bold">IKUTI KAMI</h5>
+                        <i class="fab fa-facebook-square ml-2 mr-2 fa-lg mt-2 " title="facebook"></i><a href="" class="text-dark">Facebook</a>
+                        <i class="fab fa-instagram ml-2 mr-2 fa-lg mt-2" title="instagram"></i><a href="" class="text-dark">Instagram</a>
+                        <i class="fab fa-twitter-square ml-2 mr-2 fa-lg mt-2" title="twitter"></i><a href="" class="text-dark">Twitter</a>
+                    </div>
+                </div>
+            </div>
     </footer>
+
     <!-- END FOOTER -->
     <!-- MODAL -->
     <!-- MODAL PRODUK1  -->
-    <div class="modal fade bd-example-modal-lg" id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class=" modal fade bd-example-modal-lg" id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">

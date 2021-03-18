@@ -1,0 +1,19 @@
+.fotoproduk1 img {
+    width: 100%;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.harga {
+    border-radius: .5rem;
+}
+
+input {
+    border-radius: .5rem;
+}
+
+.jaminan {
+    margin-top: 200px;
+}

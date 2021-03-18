@@ -4,12 +4,6 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
-.card p {
-    margin-top: -10px;
-    margin-bottom: 1px;
-}
-
 .row .card {
     transition: box-shadow .3s, transform 0.3s;
 }
@@ -26,16 +20,7 @@ h3 {
 /* .carousel img{
     object-fit: cover;
 } */
-.margin-left {
-    margin-left: -20px;
-}
-
-.foto h4 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.foto img {
+.foto {
     border-radius: 0.5rem;
     width: 100%;
 }
@@ -71,9 +56,17 @@ h3 {
     border-width: 2px;
 }
 #tempatbelanja{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 25px;
 }
-#belipulsa{
-    margin-left: -15px;
+.card-title{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+   
+}
+.card-text{
+    min-height: 50px;
 }
