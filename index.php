@@ -6,6 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/index.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- FLICKITY CSS -->
+    <!-- <link rel="stylesheet" href="css/flickity.min.css" media="screen"> -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- FLICKITY JS -->
+    <!-- <script src="js/flickity.pkgd.min.js"></script> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9dc4535957.js" crossorigin="anonymous"></script>
@@ -55,6 +63,193 @@
     <!-- PRODUK TERSEDIA -->
     <h3 class=" font-weight-bold m-4 text-center">Produk Tersedia</h3>
     <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <img class="card-img-top" src="img/produk1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Zephyrus</h5>
+                                    <p class="card-text">G14 GA401iH Ryzen 7 4800 8GB 512ssd GTX1650</p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk1">
+                                            Detail
+                                        </button>
+                                        <a href="checkout/produk1.html" class="btn btn-danger">Rp 15.499.999</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <div class="fotoproduk">
+                                    <img class="card-img-top" src="img/produk22.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Zephyrus</h5>
+                                    <p class="card-text">G15 GA503</p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk2">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 21.999.999</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <div class="fotoproduk">
+                                    <img class="card-img-top" src="img/produk3.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Strix</h5>
+                                    <p class="card-text">G15 G513</p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk3">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 20.499.999</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <div class="fotoproduk">
+                                    <img class="card-img-top" src="img/produk4.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Lenovo Legion 5 15ARH05 Ryzen 5</h5>
+                                    <p class="card-text">4600H 16 GB 512 SSD</p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk4">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 16.200.000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <div class="fotoproduk">
+                                    <img class="card-img-top" src="img/msi.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Laptop MSI</h5>
+                                    <p class="card-text">GF 63 Thin</p>
+
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk5">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 11.730.000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <img class="card-img-top" src="img/sades.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Headset Gaming SADES</h5>
+                                    <p class="card-text">AW79 7.1 </p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk6">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 250.000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <img class="card-img-top" src="img/sabbat.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">Sabbat X12 Pro TWS </h5>
+                                    <p class="card-text">IEM Sport Bluetooth Earphone Stereo - Flame</p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk7">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 599.000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
+                            <div class="card fotoproduk">
+                                <img class="card-img-top" src="img/mitv.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold line-clamp">New Xiaomi Mi TV 4 32inch</h5>
+                                    <p class="card-text">Android LED Smart TV 32" (penerus seri 4A) - MiTV4</p>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <div class="tombol mt-3">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk8">
+                                            Detail
+                                        </button>
+                                        <a href="#" class="btn btn-danger">Rp 2.598.000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         <div class="row mb-2 mt-5">
             <!-- CARD 1 -->
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
@@ -281,7 +476,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3 mb-5 no-gutters">
+        <div class="row mt-1 mb-5 no-gutters">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
                 <div class="card">
                     <div class="row">
@@ -964,6 +1159,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true
+        });
+    </script>
 </body>
 
 </html>
