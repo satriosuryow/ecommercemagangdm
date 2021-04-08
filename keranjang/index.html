@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/keranjang.css">
+    <link rel="stylesheet" href="../css/produk.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/jquery.nice-number.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9dc4535957.js" crossorigin="anonymous"></script>
+    <title>Keranjang</title>
+</head>
+
+<div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
+<body class="bg-light">
+    <!-- header -->
+    <section id="header" class="bg-dark">
+        <div class="container">
+            <div class="row no-gutters header-top">
+                <div class="col-5">
+                    <a href="../index.html" class="text-white pr-2" style="text-decoration: none;">Halaman Utama Digital Media Teknologi</a>
+                </div>
+                <div class="col-7 text-right">
+                    <a href="" type="button" data-toggle="dropdown" class="text-white" style="text-decoration: none;"><i class="fas fa-shopping-cart pr-1 pl-1"></i>Pesanan Saya</a>
+                    <div class="dropdown-menu">
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="../img/miband.jpg" height="20" alt="">Mi Band 4</a>
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="../img/produk1.png" height="20" alt="">Laptop ROG</a>
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="../img/sabbat.png" height="20" alt="">Sabbat X12</a>
+                    </div>
+                    <a href="#" class="text-white" style="text-decoration: none;"><i class="fas fa-envelope pr-1 pl-1"></i>dmtekno@gmail.com</a>
+                    <a href="#" class="text-white" style="text-decoration: none;"><i class=" fas fa-phone text-white pr-1 pl-1"></i>081225525144<a>
+                            <a href="../dashboard_user/profile.html#akun-saya-list" class="text-white" style="text-decoration: none;"><img src="../img/buku.jpg" class="rounded-circle p-1" height="20" alt="">Strsryw<a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <h3><i class="fab fa-shopify mr-2 text-white"></i></h3>
+            <a class="navbar-brand font-weight-bold text-white" href="../index.html">DM TEKNO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Beranda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../dashboard_user/profile.html#voucher-saya-list">Voucher <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../hubungikami">Hubungi Kami <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../bantuan/">Bantuan<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="icon mt-2">
+                    <h5>
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" title="keranjang"><i class="fas fa-shopping-cart ml-3 mr-3 text-white"></i></a>
+                        <a href="../login" title="login"><i class="fas fa-user mr-3 text-white"></i></a>
+                        <a href="../dashboard_user/profile.html#notifikasi-saya-list" title="notifikasi"><i class="fas fa-bell mr-3 text-white"></i></a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <!-- CONTENT -->
+    <div class="container bg-white mt-5 p-3">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><a class="harga">Produk</a></th>
+                        <th><a class="harga">Harga Satuan</a></th>
+                        <th><a class="harga">Kuantitas</a> </th>
+                        <th><a class="harga">Total Harga</a> </th>
+                        <th><a class="harga">Aksi</a> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="font-weight-bold"><img src="../img/produk1.png" height="100" alt="">Laptop Asus ROG Zephyrus</a></td>
+                        <td>Rp.15.499.000</td>
+                        <td><input type="number" value="0" id="" name="" min="0" max="100"></td>
+                        <td>Rp.45.000.000</td>
+                        <td><a href=""><i class="fas fa-trash-alt text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="font-weight-bold"><img src="../img/sabbat.png" height="100" alt="">Sabbat X12 Pro TWS</a></td>
+                        <td>Rp.599.000</td>
+                        <td><input type="number" value="0" id="" name="" min="0" max="100"></td>
+                        <td>Rp.1.500.000</td>
+                        <td><a href=""><i class="fas fa-trash-alt text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="font-weight-bold"><img src="../img/sades.png" height="100" alt="">Headset Gaming SADES</a></td>
+                        <td>Rp.250.000</td>
+                        <td><input type="number" value="0" id="" name="" min="0" max="100"></td>
+                        <td>Rp.500.000</td>
+                        <td><a href=""><i class="fas fa-trash-alt text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-weight-bold">Total Biaya</td>
+                        <td><a class="text-danger harga">Rp 34.000.000</a></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="text-dark mt-5">
+        <div class="bg-light p-5 border-bottom border-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-backward fa-2x"></i></div>
+                            <div class="col">
+                                <h5>Transparan</h5>
+                                <p>Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-shield-alt fa-2x"></i></div>
+                            <div class="col">
+                                <h5>100% Aman</h5>
+                                <p>Bandingkan review untuk berbagai online shop terpercaya se-Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-truck fa-2x"></i></div>
+                            <div class="col">
+                                <h5>Gratis Ongkir</h5>
+                                <p>Barang sampai di tempat Anda tanpa biaya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">DM TEKNO</h5>
+                    <p>Tentang DM Tekno</p>
+                    <p>Karir</p>
+                    <p>Blog</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">BELI</h5>
+                    <p>Tagihan dan Top Up</p>
+                    <p>Tukar Tambah</p>
+                    <p>DM Tekno COD</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">JUAL</h5>
+                    <p>Pusat Edukasi Seller</p>
+                    <p>Mitra Toppers</p>
+                    <p>Daftar Official Store</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">BANTUAN & PANDUAN</h5>
+                    <p>DM Tekno Care</p>
+                    <p>Syarat dan Ketentuan</p>
+                    <p>Kebijakan Privasi</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h4 class="font-weight-bold">PENGIRIMAN</h4>
+                    <img src="img/jne.png" width="50" class="mr-1" alt="">
+                    <img src="img/jnt.png" width="50" class="mr-1" alt="">
+                    <img src="img/gosend.png" width="50" class="mr-1" alt="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">IKUTI KAMI</h5>
+                    <i class="fab fa-facebook-square ml-2 mr-2 fa-lg mt-2 " title="facebook"></i><a href="" class="text-dark">Facebook</a>
+                    <i class="fab fa-instagram ml-2 mr-2 fa-lg mt-2" title="instagram"></i><a href="" class="text-dark">Instagram</a>
+                    <i class="fab fa-twitter-square ml-2 mr-2 fa-lg mt-2" title="twitter"></i><a href="" class="text-dark">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="../js/jquery.nice-number.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('.loader_bg').fadeToggle();
+            }, 2000);
+
+            $('input[type=number]').niceNumber();
+        });
+    </script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            $('#jmlh').keyup(function() {
+
+                var jmlh = parseInt($('#jmlh').val());
+                var tharga = jmlh * 15499999;
+                $('#tharga').val(tharga);
+
+            });
+        });
+    </script> -->
+</body>
+
+</html>

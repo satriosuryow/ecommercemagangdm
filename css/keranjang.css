@@ -1,0 +1,135 @@
+/* loader */
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+
+}
+
+.loader {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid darkgrey;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.favorit {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}
+
+.checkout {
+    width: 100%;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.harga-produk {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.card small {
+    min-height: 42px;
+}
+
+.card-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block
+}
+
+.produk-terkait img {
+    min-height: 253.14px;
+}
+
+.produk-terkait {
+    min-height: 349.14px;
+}
+
+@media(min-width:413px) and (max-width:768px) {
+    .card img {
+        min-height: 191.99px;
+    }
+}
+@media(min-width:375px) and (max-width:412px) {
+    .card img {
+        min-height: 363.2px;
+    }
+}
+input{
+    border: none;
+    background-color:white;
+    outline: none;
+    border-radius: .5rem;
+    width: 100px;
+    margin: 0 10px!important;
+}
+/* button{
+    background-color: darkgrey;
+    width: 30px;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+button:hover{
+    background-color: black;
+    color: white;
+} */
+.harga{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}

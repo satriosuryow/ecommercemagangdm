@@ -1,0 +1,45 @@
+body {
+    background-image: url('../img/bg-login.jpg');
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.login {
+    background-color: white;
+    padding: 20px;
+    margin: 9% auto;
+    width: 30%;
+}
+
+.tombol button,
+a {
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+}
+
+.first-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+input .form-control {
+    border: none;
+    outline: none;
+}
+
+@media(min-width:375px) and (max-width:767px) {
+    .login {
+        width: 300px;
+        margin: 9% auto;
+    }
+}
+
+@media(min-width:768px) and (max-width:1000px) {
+    .login {
+        width: 450px;
+        margin: 9% auto;
+    }
+}

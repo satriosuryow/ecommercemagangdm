@@ -13,7 +13,12 @@
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- FLICKITY JS -->
-    <!-- <script src="js/flickity.pkgd.min.js"></script> -->
+    <script src="js/flickity.pkgd.min.js"></script>
+    <!-- OWL CAROUSEL -->
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9dc4535957.js" crossorigin="anonymous"></script>
@@ -23,406 +28,407 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <!-- header -->
+    <section id="header" class="bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-desktop pr-2"></i>DIGITAL MEDIA TEKNOLOGI</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="row no-gutters header-top">
+                <div class="col-5">
+                    <a href="#" class="text-dark pr-2" style="text-decoration: none;">Halaman Utama Digital Media Teknologi</a>
+                </div>
+                <div class="col-7 text-right">
+                    <a href="" type="button" data-toggle="dropdown" class="text-dark" style="text-decoration: none;"><i class="fas fa-shopping-cart pr-1 pl-1"></i>Pesanan Saya</a>
+                    <div class="dropdown-menu">
+                        <a href="dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="img/miband.jpg" height="20" alt="">Mi Band 4</a>
+                        <a href="dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="img/produk1.png" height="20" alt="">Laptop ROG</a>
+                        <a href="dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="img/sabbat.png" height="20" alt="">Sabbat X12</a>
+                    </div>
+                    <a href="#" class="text-dark" style="text-decoration: none;"><i class="fas fa-envelope pr-1 pl-1"></i>dmtekno@gmail.com</a>
+                    <a href="#" class="text-dark" style="text-decoration: none;"><i class=" fas fa-phone text-dark pr-1 pl-1"></i>081225525144<a>
+                            <a href="dashboard_user/profile.html#akun-saya-list" class="text-dark" style="text-decoration: none;"><img src="img/buku.jpg" class="rounded-circle pr-1 pl-1" height="20" alt="">Strsryw<a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <h3><i class="fab fa-shopify mr-2"></i></h3>
+            <a class="navbar-brand font-weight-bold" href="#">DM TEKNO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Beranda<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="produk/index.php">PRODUK</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="dashboard_user/profile.html#voucher-saya-list">Voucher <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TUTORIAL</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="hubungikami">Hubungi Kami <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ARTIKEL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HUBUNGI KAMI</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="bantuan">Bantuan<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="icon mt-2">
+                    <h5>
+                        <a href="dashboard_user/profile.html#pesanan-saya-list" title="keranjang"> <i class="fas fa-shopping-cart ml-3 mr-3 text-dark"></i></a>
+                        <a href="login" title="login"><i class="fas fa-user mr-3 text-dark"></i></a>
+                        <a href="dashboard_user/profile.html#notifikasi-saya-list" title="notifikasi"><i class="fas fa-bell mr-3 text-dark"></i></a>
+                    </h5>
+
+
+                </div>
             </div>
         </div>
     </nav>
-    <!-- NAVBAR -->
     <!-- JUMBOTRON -->
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">EXPLORE YOURSELF WITH <br><span class="font-weight-bold"> DIGITAL MEDIA TEKNOLOGI</span></h1>
+            <h1 class="display-4">EXPLORE YOURSELF WITH <br><span class="font-weight-bold">DIGITAL MEDIA TEKNOLOGI</span></h1>
             <hr>
             <p class="lead" id="tempatbelanja">Tempat Belanja Barang Elektronik Original dan Terpercaya.</p>
         </div>
     </div>
-    <!-- PRODUK TERSEDIA -->
     <h3 class=" font-weight-bold m-4 text-center">Produk Tersedia</h3>
     <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <img class="card-img-top" src="img/produk1.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Zephyrus</h5>
-                                    <p class="card-text">G14 GA401iH Ryzen 7 4800 8GB 512ssd GTX1650</p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star-half-alt text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk1">
-                                            Detail
-                                        </button>
-                                        <a href="checkout/produk1.html" class="btn btn-danger">Rp 15.499.999</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <div class="fotoproduk">
-                                    <img class="card-img-top" src="img/produk22.png" alt="Card image cap">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Zephyrus</h5>
-                                    <p class="card-text">G15 GA503</p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk2">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 21.999.999</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <div class="fotoproduk">
-                                    <img class="card-img-top" src="img/produk3.png" alt="Card image cap">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Strix</h5>
-                                    <p class="card-text">G15 G513</p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk3">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 20.499.999</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <div class="fotoproduk">
-                                    <img class="card-img-top" src="img/produk4.png" alt="Card image cap">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Lenovo Legion 5 15ARH05 Ryzen 5</h5>
-                                    <p class="card-text">4600H 16 GB 512 SSD</p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star-half-alt text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk4">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 16.200.000</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <div class="fotoproduk">
-                                    <img class="card-img-top" src="img/msi.png" alt="Card image cap">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Laptop MSI</h5>
-                                    <p class="card-text">GF 63 Thin</p>
-
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star-half-alt text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk5">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 11.730.000</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <img class="card-img-top" src="img/sades.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Headset Gaming SADES</h5>
-                                    <p class="card-text">AW79 7.1 </p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk6">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 250.000</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <img class="card-img-top" src="img/sabbat.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">Sabbat X12 Pro TWS </h5>
-                                    <p class="card-text">IEM Sport Bluetooth Earphone Stereo - Flame</p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk7">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 599.000</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                            <div class="card fotoproduk">
-                                <img class="card-img-top" src="img/mitv.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold line-clamp">New Xiaomi Mi TV 4 32inch</h5>
-                                    <p class="card-text">Android LED Smart TV 32" (penerus seri 4A) - MiTV4</p>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star-half-alt text-warning"></i>
-                                    <div class="tombol mt-3">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk8">
-                                            Detail
-                                        </button>
-                                        <a href="#" class="btn btn-danger">Rp 2.598.000</a>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- CAROUSEL -->
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/produk1.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop Asus ROG Zephyrus</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk1">
+                                Rp.15.000.000
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/produk22.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop Asus ROG Zephyrus</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk2">
+                                Rp.21.999.999
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/produk3.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop Asus ROG Strix</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk3">
+                                Rp.20.499.999
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/produk4.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Lenovo Legion 5 15ARH05 Ryzen 5</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk4">
+                                Rp.16.200.000
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/sades.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Headset Gaming SADES</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk6">
+                                Rp.250.000
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/sabbat.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Sabbat X12 Pro TWS</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk7">
+                                Rp.599.000
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="">
+                    <div class="card-deck">
+                        <div class="card p-2" style="border-radius: 0.5rem;">
+                            <img src="img/mitv.png" alt="">
+                            <a href="checkout" class="card-title text-dark" style="text-decoration: none;">New Xiaomi Mi TV 4 32inch</a>
+                            <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk8">
+                                Rp.2.598.000
+                            </button>
+                            <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star text-warning fa-xs"></i>
+                                <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!-- PRODUK TERSEDIA -->
         <div class="row mb-2 mt-5">
-            <!-- CARD 1 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <img class="card-img-top" src="img/produk1.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Zephyrus</h5>
-                        <p class="card-text">G14 GA401iH Ryzen 7 4800 8GB 512ssd GTX1650</p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half-alt text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk1">
-                                Detail
-                            </button>
-                            <a href="checkout/produk1.html" class="btn btn-danger">Rp 15.499.999</a>
-                        </div>
+            <!-- produk baru 1 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/produk1.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop Asus ROG Zephyrus</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk1">
+                            Rp.15.000.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 2 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <div class="fotoproduk">
-                        <img class="card-img-top" src="img/produk22.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Zephyrus</h5>
-                        <p class="card-text">G15 GA503</p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk2">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 21.999.999</a>
-                        </div>
+            <!-- produk baru 2 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/produk22.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop Asus ROG Zephyrus</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk2">
+                            Rp.21.999.999
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 3 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <div class="fotoproduk">
-                        <img class="card-img-top" src="img/produk3.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Laptop Asus ROG Strix</h5>
-                        <p class="card-text">G15 G513</p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk3">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 20.499.999</a>
-                        </div>
+            <!-- produk baru 3 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/produk3.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop Asus ROG Strix</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk3">
+                            Rp.20.499.999
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 4 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <div class="fotoproduk">
-                        <img class="card-img-top" src="img/produk4.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Lenovo Legion 5 15ARH05 Ryzen 5</h5>
-                        <p class="card-text">4600H 16 GB 512 SSD</p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half-alt text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk4">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 16.200.000</a>
-                        </div>
+            <!-- produk baru 4 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/produk4.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Lenovo Legion 5 15ARH05 Ryzen 5</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk4">
+                            Rp.16.200.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 5 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <div class="fotoproduk">
-                        <img class="card-img-top" src="img/msi.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Laptop MSI</h5>
-                        <p class="card-text">GF 63 Thin</p>
-
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half-alt text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk5">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 11.730.000</a>
-                        </div>
+            <!-- produk baru 5 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/msi.png" style="height: 142px;" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Laptop msi</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk5">
+                            Rp.11.730.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 6 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <img class="card-img-top" src="img/sades.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Headset Gaming SADES</h5>
-                        <p class="card-text">AW79 7.1 </p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk6">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 250.000</a>
-                        </div>
+            <!-- produk baru 6 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/sades.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Headset Gaming SADES</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk6">
+                            Rp.250.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 7 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <img class="card-img-top" src="img/sabbat.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">Sabbat X12 Pro TWS </h5>
-                        <p class="card-text">IEM Sport Bluetooth Earphone Stereo - Flame</p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk7">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 599.000</a>
-                        </div>
+            <!-- produk baru 7 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/sabbat.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Sabbat X12 Pro TWS</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk7">
+                            Rp.599.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- CARD 8 -->
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2">
-                <div class="card fotoproduk">
-                    <img class="card-img-top" src="img/mitv.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold line-clamp">New Xiaomi Mi TV 4 32inch</h5>
-                        <p class="card-text">Android LED Smart TV 32" (penerus seri 4A) - MiTV4</p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star-half-alt text-warning"></i>
-                        <div class="tombol mt-3">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#produk8">
-                                Detail
-                            </button>
-                            <a href="#" class="btn btn-danger">Rp 2.598.000</a>
-                        </div>
+            <!-- produk 8  -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/mitv.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">New Xiaomi Mi TV 4 32inch</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk8">
+                            Rp.2.598.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- produk 9 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/iem.jpg" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">IEM Kz EDX</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk1">
+                            Rp.100.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- produk 10 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/kzzsnpro.webp" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">IEM Kz zsn PRO</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk1">
+                            Rp.180.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- produk 11 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/miband.jpg" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">Xiaomi Mi Band 4</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk1">
+                            Rp.400.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- produk 12  -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mt-2">
+                <div class="card-deck">
+                    <div class="card p-2" style="border-radius: 0.5rem;">
+                        <img src="img/airdot.png" alt="">
+                        <a href="checkout" class="card-title text-dark" style="text-decoration: none;">TWS redmi Airdot</a>
+                        <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#produk1">
+                            Rp.200.000
+                        </button>
+                        <a class="text-center"><i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star text-warning fa-xs"></i>
+                            <i class="fas fa-star-half-alt text-warning fa-xs"></i></a>
                     </div>
                 </div>
             </div>
@@ -434,7 +440,7 @@
         <h3 class="font-weight-bold">Produk Terlaris!</h3>
         <div class="row mt-3 no-gutters">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-6">
                             <img src="img/miband.jpg" height="100" width="100" alt="">
@@ -448,7 +454,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-6">
                             <img src="img/airdot.png" height="100" width="100" alt="">
@@ -462,7 +468,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-6">
                             <img src="img/meja.jpg" height="100" width="100" alt="">
@@ -478,7 +484,7 @@
         </div>
         <div class="row mt-1 mb-5 no-gutters">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-5">
                             <img src="img/iem.jpg" height="100" width="100" alt="">
@@ -492,7 +498,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-5">
                             <img src="img/iphone.png" height="100" width="100" alt="">
@@ -506,7 +512,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-5">
                             <img src="img/kabeldata.jpg" height="100" width="100" alt="">
@@ -520,7 +526,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 p-1">
-                <div class="card">
+                <div class="card card-radius">
                     <div class="row">
                         <div class="col-4">
                             <img src="img/kursigaming.png" height="100" width="100" alt="">
@@ -540,55 +546,55 @@
     <div class="container">
         <h3 class="font-weight-bold">Cari Kategori Apa ?</h3>
         <div class="row mt-3 mb-2 no-gutters">
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
-                <img class="foto " src="img/elektronik.png" alt="">
-                <p class="text-center">Elektronik</p>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
+                <p class="text-center diskon">Elektronik</p>
+                <img class="foto" src="img/elektronik.png" alt="">
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
-                <img class="foto " src="img/dapur.png" alt="">
-                <p class="text-center">Dapur</p>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
+                <p class="text-center diskon">Dapur</p>
+                <img class="foto" src="img/dapur.png" alt="">
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
-                <img class="foto " src="img/mainan.png" alt="">
-                <p class="text-center">Mainan & Hobi</p>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
+                <img class="foto" src="img/mainan.png" alt="">
+                <p class="text-center diskon">Mainan & Hobi</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
-                <img class="foto " src="img/fashion.jpg" alt="">
-                <p class="text-center">Fashion</p>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
+                <img class="foto" src="img/fashion.jpg" alt="">
+                <p class="text-center diskon">Fashion</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
-                <img class="foto " src="img/buku.jpg" alt="">
-                <p class="text-center">Buku</p>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
+                <img class="foto" src="img/buku.jpg" alt="">
+                <p class="text-center diskon">Buku</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
-                <img class="foto " src="img/olahraga.jpg" alt="">
-                <p class="text-center">Olahraga</p>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
+                <img class="foto" src="img/olahraga.jpg" alt="">
+                <p class="text-center diskon">Olahraga</p>
             </div>
         </div>
         <div class="row mt-3 no-gutters">
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
                 <img class="foto " src="img/handphone.jpg" alt="">
-                <p class="text-center">Handphone</p>
+                <p class="text-center diskon">Handphone</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
                 <img class="foto " src="img/laptop.jpg" alt="">
-                <p class="text-center">Laptop</p>
+                <p class="text-center diskon">Laptop</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
                 <img class="foto " src="img/gaming.jpg" alt="">
-                <p class="text-center">Gaming</p>
+                <p class="text-center diskon">Gaming</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
                 <img class="foto " src="img/hewan.jpg" alt="">
-                <p class="text-center">Perawatan Hewan</p>
+                <p class="text-center diskon">Perawatan Hewan</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
                 <img class="foto " src="img/perawatan.jpg" alt="">
-                <p class="text-center">Perawatan Tubuh</p>
+                <p class="text-center diskon">Perawatan Tubuh</p>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1">
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 p-1 produk-kategori">
                 <img class="foto " src="img/musik.jpg" alt="">
-                <p class="text-center">Film & Musik</p>
+                <p class="text-center diskon">Film & Musik</p>
             </div>
         </div>
     </div>
@@ -599,13 +605,13 @@
             <h3 class="font-weight-bold">Official Store </h3><i class="fas fa-check fa-2x ml-1 text-primary"></i>
         </div>
         <div class="row mt-3 no-gutters">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1 produk-kategori">
                 <img class="foto p-1" src="img/logitech.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1 produk-kategori">
                 <img class="foto p-1" src="img/dekoruma.jpg" alt="">
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 p-1 produk-kategori">
                 <img class="foto p-1" src="img/ovomaltine.jpg" alt="">
             </div>
         </div>
@@ -629,27 +635,27 @@
         <div class="bg-light p-5 border-bottom border-secondary">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                         <div class="row">
-                            <div class="col-2"><i class="fas fa-backward fa-2x"></i></div>
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-backward fa-2x"></i></div>
                             <div class="col">
                                 <h5>Transparan</h5>
                                 <p>Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                         <div class="row">
-                            <div class="col-2"><i class="fas fa-shield-alt fa-2x"></i></div>
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-shield-alt fa-2x"></i></div>
                             <div class="col">
                                 <h5>100% Aman</h5>
                                 <p>Bandingkan review untuk berbagai online shop terpercaya se-Indonesia</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                         <div class="row">
-                            <div class="col-2"><i class="fas fa-truck fa-2x"></i></div>
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-truck fa-2x"></i></div>
                             <div class="col">
                                 <h5>Gratis Ongkir</h5>
                                 <p>Barang sampai di tempat Anda tanpa biaya</p>
@@ -661,42 +667,37 @@
         </div>
         <div class="container">
             <div class="row mt-5">
-
-                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                     <h5 class="font-weight-bold">DM TEKNO</h5>
                     <p>Tentang DM Tekno</p>
                     <p>Karir</p>
                     <p>Blog</p>
                 </div>
-                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                     <h5 class="font-weight-bold">BELI</h5>
                     <p>Tagihan dan Top Up</p>
                     <p>Tukar Tambah</p>
                     <p>DM Tekno COD</p>
                 </div>
-                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                     <h5 class="font-weight-bold">JUAL</h5>
                     <p>Pusat Edukasi Seller</p>
                     <p>Mitra Toppers</p>
                     <p>Daftar Official Store</p>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row mt-2">
-                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                     <h5 class="font-weight-bold">BANTUAN & PANDUAN</h5>
                     <p>DM Tekno Care</p>
                     <p>Syarat dan Ketentuan</p>
                     <p>Kebijakan Privasi</p>
                 </div>
-                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                     <h4 class="font-weight-bold">PENGIRIMAN</h4>
                     <img src="img/jne.png" width="50" class="mr-1" alt="">
                     <img src="img/jnt.png" width="50" class="mr-1" alt="">
                     <img src="img/gosend.png" width="50" class="mr-1" alt="">
                 </div>
-                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
                     <h5 class="font-weight-bold">IKUTI KAMI</h5>
                     <i class="fab fa-facebook-square ml-2 mr-2 fa-lg mt-2 " title="facebook"></i><a href="" class="text-dark">Facebook</a>
                     <i class="fab fa-instagram ml-2 mr-2 fa-lg mt-2" title="instagram"></i><a href="" class="text-dark">Instagram</a>
@@ -1159,13 +1160,32 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script>
-        $('.main-carousel').flickity({
-            // options
-            cellAlign: 'left',
-            contain: true
-        });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle();
+        }, 2000);
+    </script>
+
 </body>
 
 </html>

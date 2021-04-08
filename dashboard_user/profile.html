@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- croppie -->
+    <link rel="stylesheet" href="../css/croppie.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/produk.css">
+    <link rel="stylesheet" href="../css/dashboard_user.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9dc4535957.js" crossorigin="anonymous"></script>
+    <title>Dashboard User</title>
+</head>
+<div class="loader_bg">
+    <div class="loader">
+    </div>
+</div>
+
+<body class="bg-light">
+    <!-- header -->
+    <section id="header" class="bg-dark">
+        <div class="container">
+            <div class="row no-gutters header-top">
+                <div class="col-5">
+                    <a href="../index.html" class="text-white pr-2" style="text-decoration: none;">Halaman Utama Digital Media Teknologi</a>
+                </div>
+                <div class="col-7 text-right">
+                    <a href="" type="button" data-toggle="dropdown" class="text-white" style="text-decoration: none;"><i class="fas fa-shopping-cart pr-1 pl-1"></i>Pesanan Saya</a>
+                    <div class="dropdown-menu">
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="../img/miband.jpg" height="20" alt="">Mi Band 4</a>
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="../img/produk1.png" height="20" alt="">Laptop ROG</a>
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" class="p-2 dropdown-item" type="button"><img src="../img/sabbat.png" height="20" alt="">Sabbat X12</a>
+                    </div>
+                    <a href="#" class="text-white" style="text-decoration: none;"><i class="fas fa-envelope pr-1 pl-1"></i>dmtekno@gmail.com</a>
+                    <a href="#" class="text-white" style="text-decoration: none;"><i class=" fas fa-phone text-white pr-1 pl-1"></i>081225525144<a>
+                            <a href="../dashboard_user/profile.html#akun-saya-list" class="text-white" style="text-decoration: none;"><img src="../img/buku.jpg" class="rounded-circle p-1" height="20" alt="">Strsryw<a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <h3><i class="fab fa-shopify mr-2 text-white"></i></h3>
+            <a class="navbar-brand font-weight-bold text-white" href="../index.html">DM TEKNO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../index.html">Beranda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../dashboard_user/profile.html#voucher-saya-list">Voucher <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../hubungikami">Hubungi Kami <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../bantuan/">Bantuan<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="icon mt-2">
+                    <h5>
+                        <a href="../dashboard_user/profile.html#pesanan-saya-list" title="keranjang"><i class="fas fa-shopping-cart ml-3 mr-3 text-white"></i></a>
+                        <a href="../login" title="login"><i class="fas fa-user mr-3 text-white"></i></a>
+                        <a href="../dashboard_user/profile.html#notifikasi-saya-list" title="notifikasi"><i class="fas fa-bell mr-3 text-white"></i></a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <!-- content -->
+    <section>
+        <div class="container mt-5 p-2">
+            <div class="row">
+                <!-- sidebar profil -->
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <div class="profil">
+                        <div class="row border-bottom no-gutters">
+                            <div class="col-4 pb-2">
+                                <img src="../img/buku.jpg" class="rounded-circle" height="60" alt="">
+                            </div>
+                            <div class="col">
+                                <a href="" id="name_profil" class="text-dark font-weight-bold mt-2" style="text-decoration: none;">Strsryw</a><br>
+                                <a href="" class="text-dark" style="text-decoration: none;"><i class="fas fa-pencil-alt pr-1"></i>Ubah Profil</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userpage-sidebar-menu mt-3 ">
+                        <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active bg-light text-dark" id="akun-saya-list" data-toggle="list" href="#akun-saya" role="tab" aria-controls="home"><i class="fas fa-user-tie p-1 icon text-warning"></i>Akun Saya</a>
+                            <a class="list-group-item list-group-item-action bg-light text-dark" id="pesanan-saya-list" data-toggle="list" href="#pesanan-saya" role="tab" aria-controls="profile"><i class="fas fa-shopping-cart p-1 icon text-primary"></i>Pesanan Saya</a>
+                            <a class="list-group-item list-group-item-action bg-light text-dark" id="notifikasi-saya-list" data-toggle="list" href="#notifikasi-saya" role="tab" aria-controls="messages"><i class="fas fa-bell p-1 icon text-danger"></i>Notifikasi</a>
+                            <a class="list-group-item list-group-item-action bg-light text-dark" id="voucher-saya-list" data-toggle="list" href="#voucher-saya" role="tab" aria-controls="settings"><i class="fas fa-ticket-alt p-1 icon"></i>Voucher Saya</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- main content -->
+                <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- akun saya -->
+                        <div class="tab-pane fade show active" id="akun-saya" role="tabpanel" aria-labelledby="akun-saya-list">
+                            <div class="card p-3">
+                                <h5 class="font-weight-bold">Profil Saya</h5>
+                                <p class="text-dark border-bottom pb-2" style="text-decoration: none;">Kelola informasi profil Anda untuk mengontrol, melindungi dan mengamankan akun</p>
+                                <div class="row container">
+                                    <div class="col-lg-8">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-lg-4">
+                                                    <label for="staticEmail" class="col-form-label">Username</label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="text" readonly class="form-control-plaintext font-weight-bold" id="staticEmail" value="Strsryw">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-lg-4">
+                                                    <label for="nama">Nama</label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control fotm-control-sm" id="nama" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-lg-4">
+                                                    <label for="staticEmail" class="col-form-label">Email</label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="satrio123@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-lg-4">
+                                                    <label for="staticEmail" class="col-form-label">No HP</label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="081224525222">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-lg-4">
+                                                    <label for="staticEmail" class="col-form-label">Nama Toko</label>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="strsryw">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-lg-4">
+                                                    <label for="">Jenis Kelamin</label><br>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-danger">Simpan</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label for="image">Input foto</label>
+                                        <div class="custom-file mb-3">
+                                            <label class="custom-file-label" for="image_user">Choose file</label>
+                                            <input type="file" class="custom-file-input" id="image" name="image">
+                                        </div>
+                                        <div class="text-center" id="image_demo" class="p-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pesanan saya -->
+                        <div class="tab-pane fade" id="pesanan-saya" role="tabpanel" aria-labelledby="pesanan-saya-list">
+                            <div class="container">
+                                <div class="card p-2">
+                                    <ul class="nav pills nav-justified">
+                                        <li class="active"><a data-toggle="tab" href="#semua" class="active show text-dark p-3" style="text-decoration: none;">Semua</a></li>
+                                        <li><a data-toggle="tab" href="#belum_bayar" class="text-dark p-3" style="text-decoration: none;">Belum Bayar</a></li>
+                                        <li><a data-toggle="tab" href="#dikemas" class="text-dark p-3" style="text-decoration: none;">Dikemas</a></li>
+                                        <li><a data-toggle="tab" href="#dikirim" class="text-dark p-3" style="text-decoration: none;">Dikirim</a></li>
+                                        <li><a data-toggle="tab" href="#selesai" class="text-dark p-3" style="text-decoration: none;">Selesai</a></li>
+                                        <li><a data-toggle="tab" href="#dibatalkan" class="text-dark p-3" style="text-decoration: none;">Dibatalkan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="semua" class="tab-pane fade in active show">
+                                        <!-- produk1 -->
+                                        <div class="card p-3 mt-1">
+                                            <div class="row pb-1 border-bottom">
+                                                <div class="col-lg-10 col-md-8">
+                                                    <img src="../img/mitv.png" class="p-1 rounded-circle" height="30" alt="">
+                                                    <a href="" class="font-weight-bold text-dark" style="text-decoration: none;">Mi Shop</a>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <a href="" class="text-danger" style="text-decoration: none;">Dibatalkan</a>
+                                                </div>
+                                            </div>
+                                            <div class="row p-3 border-bottom">
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <img src="../img//miband.jpg" height="100" alt="">
+                                                        </div>
+                                                        <div class="col">
+                                                            <a>Xiaomi Mi Band 4 Original</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <p class="text-right">Rp. 400.000</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-right no-gutters">Total Pesanan : <span class="text-danger font-weight-bold">Rp. 402.500</span></p>
+                                            <div class="tombol-beli">
+                                                <small class="font-italic">Dibatalkan secara otomatis oleh sistem</small>
+                                                <button class="btn btn-danger">Beli Lagi</button>
+                                            </div>
+                                        </div>
+                                        <!-- produk2 -->
+                                        <div class="card mt-1 p-3">
+                                            <div class="row pb-1 border-bottom">
+                                                <div class="col-lg-10 col-md-8">
+                                                    <img src="../img/produk1.png" class="p-1 rounded-circle" height="30" alt="">
+                                                    <a href="" class="font-weight-bold text-dark" style="text-decoration: none;">ROG Shop</a>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <a href="" class="text-danger" style="text-decoration: none;">Dibatalkan</a>
+                                                </div>
+                                            </div>
+                                            <div class="row p-3 border-bottom">
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <img src="../img/produk1.png" height="80" alt="">
+                                                        </div>
+                                                        <div class="col">
+                                                            <a>Laptop Asus ROG Zephyrus G14 GA401iH Ryzen 7 4800 8GB 512ssd GTX1650</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <p class="text-right">Rp. 15.499.999</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-right no-gutters">Total Pesanan : <span class="text-danger font-weight-bold">Rp. 15.502.499</span></p>
+                                            <div class="tombol-beli">
+                                                <small class="font-italic">Dibatalkan secara otomatis oleh sistem</small>
+                                                <button class="btn btn-danger">Beli Lagi</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="belum_bayar" class="tab-pane fade">
+                                        <div class="card p-3 mt-1">
+                                            <div class="text-center">
+                                                <img src="../img/cart-empty.jpg" alt="">
+                                                <h4 class="font-weight-bold font-italic">Ups ! Belum Ada Pesanan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="dikemas" class="tab-pane fade">
+                                        <div class="card p-3 mt-1">
+                                            <div class="text-center">
+                                                <img src="../img/cart-empty.jpg" alt="">
+                                                <h4 class="font-weight-bold font-italic">Ups ! Belum Ada Pesanan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="dikirim" class="tab-pane fade">
+                                        <div class="card p-3 mt-1">
+                                            <div class="text-center">
+                                                <img src="../img/cart-empty.jpg" alt="">
+                                                <h4 class="font-weight-bold font-italic">Ups ! Belum Ada Pesanan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="selesai" class="tab-pane fade">
+                                        <div class="card p-3 mt-1">
+                                            <div class="text-center">
+                                                <img src="../img/cart-empty.jpg" alt="">
+                                                <h4 class="font-weight-bold font-italic">Ups ! Belum Ada Pesanan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="dibatalkan" class="tab-pane fade">
+                                        <div class="card p-3 mt-1">
+                                            <div class="text-center">
+                                                <img src="../img/cart-empty.jpg" alt="">
+                                                <h4 class="font-weight-bold font-italic">Ups ! Belum Ada Pesanan</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Notifikasi -->
+                        <div class="tab-pane fade" id="notifikasi-saya" role="tabpanel" aria-labelledby="notifikasi-saya-list">
+                            <div class="card p-3">
+                                <!-- pembatalan1 -->
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="row">
+                                            <div class="col-lg-2 no-gutters">
+                                                <img src="../img/produk1.png" height="100" alt="">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <h5 class="text-dark font-weight-bold">Pesanan Dibatalkan</h5>
+                                                <a class="deskripsi">Pesanan <span class="font-weight-bold">210303DB5W5KHH</span> dibatalkan karena pembayaran kamu tidak dapat diverifikasi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="text-right">
+                                            <button class="btn btn-light border-dark btn-sm">Tampilkan rincian</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pembatalan2 -->
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="row">
+                                            <div class="col-lg-2 no-gutters">
+                                                <img src="../img/detail_voucher.png" class="pembatalan" width="100" alt="">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <h5 class="text-dark font-weight-bold">Batas Waktu Pembayaran</h5>
+                                                <a class="deskripsi">Hai <span class="font-weight-bold">Strsryw</span> selesaikan pembayaran <span class="font-weight-bold">Rp13.000</span> dengan
+                                                    kode pembayaran <span class="font-weight-bold">SHPW896X4VLS6Z</span> di Alfamart terdekat sebelum <span class="font-weight-bold">04-03-2021 15:18</span>
+                                                    Silahkan abaikan pesan ini jika kamu telah membayar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="text-right">
+                                            <button class="btn btn-light border-dark btn-sm">Tampilkan rincian</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- voucher -->
+                        <div class="tab-pane fade" id="voucher-saya" role="tabpanel" aria-labelledby="voucher-saya-list">
+                            <div class="card p-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <h5 class="font-weight-bold">Voucher Saya</h5>
+                                        </div>
+                                        <div class="col-lg-8 voucher">
+                                            <a href="" class="text-right pr-1 text-danger" style="text-decoration: none;">Dapatkan Voucher Lainnya <span class="text-dark">|</span> </a>
+                                            <a href="" class="text-right  pr-1 text-danger" style="text-decoration: none;">Lihat Riwayat Voucher <span class="text-dark">|</span></a>
+                                            <a href="" class="text-right  pr-1 text-dark" style="text-decoration: none;">Pelajari Lebih Lanjut</a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light p-3">
+                                        <form class="form-inline">
+                                            <label for="" class="pr-2">Tambah Voucher</label>
+                                            <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                                            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-lg-6">
+                                            <div class="card voucher-tersedia">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <img src="../img/detail_voucher.png" width="100" alt="">
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <a href="" class="title-voucher voucher pl-1 text-dark font-weight-bold" style="text-decoration: none;">Voucher Gratis Ongkir</a>
+                                                        <a href="" class="konten-voucher border border-danger p-1 ml-1 text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#modal-teknopay">DM TeknoPay </a><br>
+                                                        <small class="pl-1"> Hingga: 08.05.2021</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="card voucher-tersedia">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <img src="../img/detail_voucher2.png" width="100" alt="">
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <a href="" class="title-voucher voucher pl-1 text-dark font-weight-bold" style="text-decoration: none;">Voucher Gratis Ongkir</a>
+                                                        <a href="" class="konten-voucher border border-danger p-1 ml-1 text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#modal-teknopay2">DM TeknoPay </a><br>
+                                                        <small class="pl-1"> Hingga: 10.04.2021</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="container mt-3 p-2">Produk Terkait</h5>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 p-1">
+                                        <div class="card produk-terkait p-2">
+                                            <img src="../img/iem.jpg" alt="">
+                                            <div class="card-title font-weight-bold">
+                                                IEM Kz EDX
+                                            </div>
+                                            <small class="line-clamp">Mic Earphones Dynamic HIFI Bass Earbuds In Ear Monitor</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 p-1">
+                                        <div class="card produk-terkait p-2">
+                                            <img src="../img/iphone11.png" alt="">
+                                            <div class="card-title font-weight-bold">
+                                                Iphone 11
+                                            </div>
+                                            <small class="line-clamp">12 MP 64 GB Storage</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 p-1">
+                                        <div class="card produk-terkait p-2">
+                                            <img src="../img/airdot.png" alt="">
+                                            <div class="card-title font-weight-bold">
+                                                Redmi Airdot
+                                            </div>
+                                            <small class="line-clamp">TWS Bluetooth 5.0 Earphone DSP HD Original</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 produk-terkait p-1">
+                                        <div class="card p-2">
+                                            <img src="../img/miband.jpg" alt="">
+                                            <div class="card-title font-weight-bold">
+                                                Mi Band 4
+                                            </div>
+                                            <small class="line-clamp">Xiaomi Mi Band 4 Original </small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 p-1">
+                                        <div class="card produk-terkait p-2">
+                                            <img src="../img/logitech.png" alt="">
+                                            <div class="card-title font-weight-bold">
+                                                G102 Gaming Mouse
+                                            </div>
+                                            <small class="line-clamp">G102 LIGHTSYNC</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 p-1">
+                                        <div class="card produk-terkait p-2">
+                                            <img src="../img/keyboard.webp" alt="">
+                                            <div class="card-title font-weight-bold">
+                                                Rexus Legionare MX9
+                                            </div>
+                                            <small class="line-clamp">Keyboard Gaming Mechanical</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="text-dark mt-5">
+        <div class="bg-light p-5 border-bottom border-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-backward fa-2x"></i></div>
+                            <div class="col">
+                                <h5>Transparan</h5>
+                                <p>Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-shield-alt fa-2x"></i></div>
+                            <div class="col">
+                                <h5>100% Aman</h5>
+                                <p>Bandingkan review untuk berbagai online shop terpercaya se-Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3"><i class="fas fa-truck fa-2x"></i></div>
+                            <div class="col">
+                                <h5>Gratis Ongkir</h5>
+                                <p>Barang sampai di tempat Anda tanpa biaya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">DM TEKNO</h5>
+                    <p>Tentang DM Tekno</p>
+                    <p>Karir</p>
+                    <p>Blog</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">BELI</h5>
+                    <p>Tagihan dan Top Up</p>
+                    <p>Tukar Tambah</p>
+                    <p>DM Tekno COD</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">JUAL</h5>
+                    <p>Pusat Edukasi Seller</p>
+                    <p>Mitra Toppers</p>
+                    <p>Daftar Official Store</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">BANTUAN & PANDUAN</h5>
+                    <p>DM Tekno Care</p>
+                    <p>Syarat dan Ketentuan</p>
+                    <p>Kebijakan Privasi</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h4 class="font-weight-bold">PENGIRIMAN</h4>
+                    <img src="../img/jne.png" width="50" class="mr-1" alt="">
+                    <img src="../img/jnt.png" width="50" class="mr-1" alt="">
+                    <img src="../img/gosend.png" width="50" class="mr-1" alt="">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
+                    <h5 class="font-weight-bold">IKUTI KAMI</h5>
+                    <i class="fab fa-facebook-square ml-2 mr-2 fa-lg mt-2 " title="facebook"></i><a href="" class="text-dark">Facebook</a>
+                    <i class="fab fa-instagram ml-2 mr-2 fa-lg mt-2" title="instagram"></i><a href="" class="text-dark">Instagram</a>
+                    <i class="fab fa-twitter-square ml-2 mr-2 fa-lg mt-2" title="twitter"></i><a href="" class="text-dark">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal-teknopay" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Detail Voucher</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <img src="../img/detail_voucher.png" class="mx-auto d-block" height="200" alt="">
+                            <h5 class="text-center">Cashback 30rb</h5>
+                            <p class="font-weight-bold">Syarat dan Ketentuan</p>
+                            <div class="scroll">
+                                <ol class="syarat-ketentuan text-justify">
+                                    <li>Gunakan kode voucher : <span class="font-weight-bold">RAJANJH8OL</span></li>
+                                    <li>Voucher Cashback dapat digunakan dengan membuka halaman promo di Keranjang</li>
+                                    <li>Voucher Cashback hanya berlaku apabila pembelian Pengguna sudah memenuhi syarat dan ketentuan yang tertera pada voucher</li>
+                                    <li>Nominal cashback yang bisa didapatkan sebesar Rp 30.000.</li>
+                                    <li>Voucher Cashback berlaku untuk transaksi minimal Rp 700.000 (tidak termasuk ongkos kirim dan biaya tambahan lainnya).</li>
+                                    <li>Voucher Cashback hanya berlaku untuk pembelanjaan di RAJA NAGA SENYUM.</li>
+                                    <li>1 (satu) Pengguna Tokopedia hanya boleh menggunakan 1 (satu) akun Tokopedia untuk menggunakan Voucher Cashback ini.</li>
+                                    <li>Cashback akan diberikan dalam bentuk OVO Points pada saat transaksi selesai. Pengguna diharapkan untuk memastikan bahwa Pengguna sudah mengaktifkan OVO. Jika tidak mengaktifkan dalam 7 hari setelah mengikuti promo, Cashback akan hangus.</li>
+                                    <li>Benefit cashback akan diberikan secara pro-rata jika menggunakan pembayaran sebagian OVO Point.</li>
+                                    <li>Cashback yang diberikan disesuaikan dengan jumlah pembayaran yang digunakan selain OVO Point.</li>
+                                    <li>Promo tidak berlaku untuk produk Logam Mulia, Emas Batangan, Voucher, dan Paket Data.</li>
+                                    <li>Apabila terjadi pengembalikan dana sebagian maka terdapat penyesuaikan cashback.</li>
+                                    <li>Jika transaksi dibatalkan atau masuk ke Pusat Resolusi, dana yang kembali ke pembeli akan sesuai dengan nominal pembayaran yang dilakukan.</li>
+                                    <li>Tokopedia berhak melakukan tindakan yang diperlukan apabila diduga terjadi tindakan kecurangan yang dilakukan oleh Pengguna dan/atau yang melanggar Syarat dan Ketentuan Situs dan/atau merugikan pihak Tokopedia.</li>
+                                    <li>Dengan menggunakan Voucher Cashback ini, pengguna dianggap telah memahami dan menyetujui semua Syarat & Ketentuan yang berlaku.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cashback border">
+                                <p class="syarat-cashback font-weight-bold text-center border-bottom p-2">Cashback 30Rb</p>
+                                <p class="text-center p-2">Minimal pembelian 700Rb</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal-teknopay2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Detail Voucher</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <img src="../img/detail_voucher2.png" class="mx-auto d-block" width="200" alt="">
+                            <h5 class="text-center">Cashback 30rb</h5>
+                            <p class="font-weight-bold">Syarat dan Ketentuan</p>
+                            <div class="scroll">
+                                <ol class="syarat-ketentuan text-justify">
+                                    <li>Gunakan kode voucher : <span class="font-weight-bold">SATRGNTNG</span></li>
+                                    <li>Voucher Cashback dapat digunakan dengan membuka halaman promo di Keranjang</li>
+                                    <li>Voucher Cashback hanya berlaku apabila pembelian Pengguna sudah memenuhi syarat dan ketentuan yang tertera pada voucher</li>
+                                    <li>Nominal cashback yang bisa didapatkan sebesar Rp 30.000.</li>
+                                    <li>Voucher Cashback berlaku untuk transaksi minimal Rp 700.000 (tidak termasuk ongkos kirim dan biaya tambahan lainnya).</li>
+                                    <li>Voucher Cashback hanya berlaku untuk pembelanjaan di RAJA NAGA SENYUM.</li>
+                                    <li>1 (satu) Pengguna Tokopedia hanya boleh menggunakan 1 (satu) akun Tokopedia untuk menggunakan Voucher Cashback ini.</li>
+                                    <li>Cashback akan diberikan dalam bentuk OVO Points pada saat transaksi selesai. Pengguna diharapkan untuk memastikan bahwa Pengguna sudah mengaktifkan OVO. Jika tidak mengaktifkan dalam 7 hari setelah mengikuti promo, Cashback akan hangus.</li>
+                                    <li>Benefit cashback akan diberikan secara pro-rata jika menggunakan pembayaran sebagian OVO Point.</li>
+                                    <li>Cashback yang diberikan disesuaikan dengan jumlah pembayaran yang digunakan selain OVO Point.</li>
+                                    <li>Promo tidak berlaku untuk produk Logam Mulia, Emas Batangan, Voucher, dan Paket Data.</li>
+                                    <li>Apabila terjadi pengembalikan dana sebagian maka terdapat penyesuaikan cashback.</li>
+                                    <li>Jika transaksi dibatalkan atau masuk ke Pusat Resolusi, dana yang kembali ke pembeli akan sesuai dengan nominal pembayaran yang dilakukan.</li>
+                                    <li>Tokopedia berhak melakukan tindakan yang diperlukan apabila diduga terjadi tindakan kecurangan yang dilakukan oleh Pengguna dan/atau yang melanggar Syarat dan Ketentuan Situs dan/atau merugikan pihak Tokopedia.</li>
+                                    <li>Dengan menggunakan Voucher Cashback ini, pengguna dianggap telah memahami dan menyetujui semua Syarat & Ketentuan yang berlaku.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cashback border">
+                                <p class="syarat-cashback font-weight-bold text-center border-bottom p-2">Cashback 30Rb</p>
+                                <p class="text-center p-2">Minimal pembelian 700Rb</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/croppie.min.js"></script>
+    <script>
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+        $('input[type="file"]').change(function(e) {
+            var fileName = e.target.files[0].name;
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                image_crop.croppie('bind', {
+                    url: e.target.result
+                });
+            };
+            reader.readAsDataURL(this.files[0]);
+        });
+
+        var opts = {
+            viewport: {
+                width: 150,
+                height: 150,
+                type: 'circle'
+            },
+            boundary: {
+                width: 227,
+                height: 250
+            },
+            url: '../img/buku.jpg',
+        };
+
+        var image_crop = $('#image_demo').croppie(opts);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle();
+        }, 2000);
+    </script>
+
+</body>
+
+</html>
