@@ -177,4 +177,23 @@ h3 {
 
 }
 
+.produk-tersedia .card img {
+    min-height: 132px;
+}
 
+@media(min-width:375px) and (max-width:767px) {
+    .produk-tersedia .card img {
+        min-height: 363.2px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1000px) {
+    .produk-tersedia .card img {
+        min-height: 132px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .produk-tersedia .card img {
+        min-height: 142px;
+    }
+}
